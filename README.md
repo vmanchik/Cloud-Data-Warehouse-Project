@@ -12,7 +12,7 @@ There are two primary datasets used in this project - songs data and log files. 
 
 The tables in the data warehouse are organized around a star schema, which consists of a fact table and a set of dimension tables.  Below is a graphical representation of the schema used in this project.
 
-![](images/Redshif%20Schema.png)
+![](images/redshift_schema.png)
 
 ## Data Warehouse Setup
 
