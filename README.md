@@ -43,8 +43,10 @@ Use the following steps to set up the Redshift cluster, create and populate the 
 5. Run "python create_tables.py" using %run magic function within the jupyter notebook cell.
 
 7. Run "etl.py"
-
-8. Clean up resources on AWS to preserve cost
+   
+9. Run select queries to make sure records were inserted correctly during the ETL process.
+    
+11. Clean up resources on AWS to preserve cost
 
 
 
