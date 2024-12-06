@@ -5,7 +5,7 @@ from sql_queries import copy_table_queries, insert_table_queries
 
 def load_staging_tables(cur, conn):
     """
-    Populate the staging events and staging songs tables with data using copy method from the S3 storage
+    Populate the staging events and staging songs tables with data using the copy method from S3 storage.
     """
     for query in copy_table_queries:
         cur.execute(query)
@@ -14,7 +14,7 @@ def load_staging_tables(cur, conn):
 
 def insert_tables(cur, conn):
     """
-    Transform and insert data from the staging tables to the dimension tables and the fact table using sql queries
+    Transform and insert data from the staging tables to the dimension tables and the fact table using SQL queries.
     """
     for query in insert_table_queries:
         cur.execute(query)
